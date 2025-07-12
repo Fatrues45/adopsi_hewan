@@ -4,7 +4,7 @@ Sistem ini merupakan aplikasi web berbasis CodeIgniter 3 untuk mempermudah prose
 
 ## 🌟 Fitur Utama
 
-* Register, Login, & Autentikasi Admin dan Adopter
+* Register, Login, & Autentifikasi Admin dan Adopter
 * Dashboard statistik hewan (tersedia & diadopsi)
 * CRUD data pengguna
 * CRUD data hewan
