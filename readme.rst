@@ -1,71 +1,89 @@
-###################
-What is CodeIgniter
-###################
+# 📃 Sistem Informasi Adopsi Hewan
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Sistem ini merupakan aplikasi web berbasis CodeIgniter 3 untuk mempermudah proses adopsi hewan peliharaan secara online. Dikembangkan sebagai bagian dari proyek **Sertifikasi Kompetensi Skema Analis Program (BNSP)**.
 
-*******************
-Release Information
-*******************
+## 🌟 Fitur Utama
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+* Register, Login, & Autentikasi Admin dan Adopter
+* Dashboard statistik hewan (tersedia & diadopsi)
+* CRUD data pengguna
+* CRUD data hewan
+* Manajemen data adopter dan donasi
+* Tampilan UI menggunakan template SB Admin 2
+* Tampilan UI adopter menggunakan bootstrap 4
 
-**************************
-Changelog and New Features
-**************************
+## 🛠️ Teknologi yang Digunakan
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+* Xampp
+* Visual Studio Code
+* PHP 8.x.x
+* CodeIgniter 3
+* MySQL
+* HTML, CSS, JavaScript
+* SB Admin 2 (UI Template)
+* Bootstrap 4 (UI Icon)
 
-*******************
-Server Requirements
-*******************
+## 📂 Struktur Folder
 
-PHP version 5.6 or newer is recommended.
+```
+adopsi_hewan/
+├── application/          # Folder utama CodeIgniter (Controllers, Models, Views, config, dll)
+│   ├── config/
+│   ├── controllers/
+│   ├── core/
+│   ├── helpers/
+│   ├── hooks/
+│   ├── language/
+│   ├── libraries/
+│   ├── logs/
+│   ├── models/
+│   └── views/
+├── assets/               # Folder tambahan untuk menyimpan resource statis
+│   ├── css/
+│   ├── js/
+│   ├── img/
+├── system/               # Core dari CodeIgniter (pada beberapa file di tambahkan #[\AllowDynamicProperties])
+├── uploads/              # Folder untuk menyimpan file upload (berikan .gitignore)
+├── .gitignore            # File untuk mengabaikan file yang tidak perlu di Git
+├── composer.json         # (Jika menggunakan Composer)
+├── .env                  # (Opsional) file env jika memakai konfigurasi environment
+├── README.md             # Penjelasan singkat proyek
+└── index.php             # Front controller utama
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+```
 
-************
-Installation
-************
+## ⚙️ Cara Menjalankan
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+1. Letakkan folder `adopsi_hewan` di direktori `htdocs/` (XAMPP)
+2. Buat database `adopsi_hewan` dan import file SQL jika ada
+3. Atur koneksi database di `application/config/database.php`
+4. Jalankan di browser melalui: `http://localhost/adopsi_hewan`
 
-*******
-License
-*******
+## 📄 Log Perkembangan Proyek
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+### Minggu 1
 
-*********
-Resources
-*********
+* Setup CodeIgniter dan konfigurasi awal database
+* Buat modul autentikasi admin (login/logout)
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+### Minggu 2
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+* Implementasi dashboard admin dan tampilan statistik
+* CRUD data hewan dengan model `Hewan_model`
 
-***************
-Acknowledgement
-***************
+### Minggu 3
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+* Modul donasi dan data adopter
+* Penambahan validasi & optimasi tampilan UI
+
+### Minggu 4
+
+* Finalisasi dokumentasi & persiapan sertifikasi
+
+## 📝 Status
+
+> ✅ Proyek siap digunakan untuk demonstrasi dan uji kompetensi Analis Program.
+
+---
+
+Silakan sesuaikan README ini jika kamu menambahkan fitur lain atau ingin menyertakan screenshoot dan link demo.
