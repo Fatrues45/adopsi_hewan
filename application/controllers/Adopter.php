@@ -66,7 +66,6 @@ class Adopter extends CI_Controller {
         $this->load->model('Donasi_model');
         // Tidak perlu login
         $data['dokumentasi_donasi'] = $this->Donasi_model->get_all();
-        $data['kontak'] = $this->Adopter_model->get_kontak(); // optional jika ada data kontak
         $data['kucing'] = $this->Hewan_model->get_satu_kucing_tersedia();
         $data['anjing'] = $this->Hewan_model->get_satu_anjing_tersedia();
         $data['jumlah_kucing'] = $this->Hewan_model->count_tersedia_by_jenis('Kucing');
